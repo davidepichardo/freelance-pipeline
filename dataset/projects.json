@@ -1,0 +1,97 @@
+{
+	"name": "projects",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Projects",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "projects.csv",
+				"folderPath": "projects",
+				"container": "bronze"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "project_id",
+				"type": "String"
+			},
+			{
+				"name": "client_id",
+				"type": "String"
+			},
+			{
+				"name": "title",
+				"type": "String"
+			},
+			{
+				"name": "description",
+				"type": "String"
+			},
+			{
+				"name": "category",
+				"type": "String"
+			},
+			{
+				"name": "project_type",
+				"type": "String"
+			},
+			{
+				"name": "budget_min",
+				"type": "String"
+			},
+			{
+				"name": "budget_max",
+				"type": "String"
+			},
+			{
+				"name": "fixed_price",
+				"type": "String"
+			},
+			{
+				"name": "status",
+				"type": "String"
+			},
+			{
+				"name": "posted_date",
+				"type": "String"
+			},
+			{
+				"name": "deadline_date",
+				"type": "String"
+			},
+			{
+				"name": "completion_date",
+				"type": "String"
+			},
+			{
+				"name": "required_skills",
+				"type": "String"
+			},
+			{
+				"name": "experience_level",
+				"type": "String"
+			},
+			{
+				"name": "project_duration",
+				"type": "String"
+			},
+			{
+				"name": "num_proposals_received",
+				"type": "String"
+			},
+			{
+				"name": "featured",
+				"type": "String"
+			}
+		]
+	}
+}
