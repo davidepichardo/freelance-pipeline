@@ -1,5 +1,5 @@
 {
-	"name": "Users",
+	"name": "Freelancers",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "LS_MarketplaceDataLake",
@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "users.csv",
+				"fileName": "freelancer_profiles.csv",
 				"folderPath": "users",
 				"container": "bronze"
 			},
@@ -25,55 +25,63 @@
 				"type": "String"
 			},
 			{
-				"name": "email",
+				"name": "freelancer_id",
 				"type": "String"
 			},
 			{
-				"name": "username",
+				"name": "bio",
 				"type": "String"
 			},
 			{
-				"name": "first_name",
+				"name": "skills",
 				"type": "String"
 			},
 			{
-				"name": "last_name",
+				"name": "primary_category",
 				"type": "String"
 			},
 			{
-				"name": "user_type",
+				"name": "hourly_rate",
 				"type": "String"
 			},
 			{
-				"name": "registration_date",
+				"name": "experience_years",
 				"type": "String"
 			},
 			{
-				"name": "last_active_date",
+				"name": "portfolio_url",
 				"type": "String"
 			},
 			{
-				"name": "account_status",
+				"name": "total_projects",
 				"type": "String"
 			},
 			{
-				"name": "verification_level",
+				"name": "completed_projects",
 				"type": "String"
 			},
 			{
-				"name": "subscription_tier",
+				"name": "success_rate",
 				"type": "String"
 			},
 			{
-				"name": "country",
+				"name": "average_rating",
 				"type": "String"
 			},
 			{
-				"name": "timezone",
+				"name": "total_reviews",
 				"type": "String"
 			},
 			{
-				"name": "profile_image_url",
+				"name": "response_time_hours",
+				"type": "String"
+			},
+			{
+				"name": "availability",
+				"type": "String"
+			},
+			{
+				"name": "languages",
 				"type": "String"
 			}
 		]

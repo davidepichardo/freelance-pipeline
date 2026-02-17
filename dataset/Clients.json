@@ -1,5 +1,5 @@
 {
-	"name": "Users",
+	"name": "Clients",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "LS_MarketplaceDataLake",
@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "users.csv",
+				"fileName": "client_profiles.csv",
 				"folderPath": "users",
 				"container": "bronze"
 			},
@@ -25,55 +25,43 @@
 				"type": "String"
 			},
 			{
-				"name": "email",
+				"name": "client_id",
 				"type": "String"
 			},
 			{
-				"name": "username",
+				"name": "company_name",
 				"type": "String"
 			},
 			{
-				"name": "first_name",
+				"name": "company_size",
 				"type": "String"
 			},
 			{
-				"name": "last_name",
+				"name": "industry",
 				"type": "String"
 			},
 			{
-				"name": "user_type",
+				"name": "total_spent",
 				"type": "String"
 			},
 			{
-				"name": "registration_date",
+				"name": "projects_posted",
 				"type": "String"
 			},
 			{
-				"name": "last_active_date",
+				"name": "active_projects",
 				"type": "String"
 			},
 			{
-				"name": "account_status",
+				"name": "average_rating",
 				"type": "String"
 			},
 			{
-				"name": "verification_level",
+				"name": "payment_verified",
 				"type": "String"
 			},
 			{
-				"name": "subscription_tier",
-				"type": "String"
-			},
-			{
-				"name": "country",
-				"type": "String"
-			},
-			{
-				"name": "timezone",
-				"type": "String"
-			},
-			{
-				"name": "profile_image_url",
+				"name": "repeat_client",
 				"type": "String"
 			}
 		]

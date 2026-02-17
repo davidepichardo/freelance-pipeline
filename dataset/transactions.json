@@ -1,5 +1,5 @@
 {
-	"name": "Users",
+	"name": "transactions",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "LS_MarketplaceDataLake",
@@ -10,8 +10,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "users.csv",
-				"folderPath": "users",
+				"fileName": "transactions.csv",
+				"folderPath": "transactions",
 				"container": "bronze"
 			},
 			"columnDelimiter": ",",
@@ -21,59 +21,75 @@
 		},
 		"schema": [
 			{
-				"name": "user_id",
+				"name": "transaction_id",
 				"type": "String"
 			},
 			{
-				"name": "email",
+				"name": "project_id",
 				"type": "String"
 			},
 			{
-				"name": "username",
+				"name": "freelancer_id",
 				"type": "String"
 			},
 			{
-				"name": "first_name",
+				"name": "client_id",
 				"type": "String"
 			},
 			{
-				"name": "last_name",
+				"name": "proposal_id",
 				"type": "String"
 			},
 			{
-				"name": "user_type",
+				"name": "amount",
 				"type": "String"
 			},
 			{
-				"name": "registration_date",
+				"name": "commission_amount",
 				"type": "String"
 			},
 			{
-				"name": "last_active_date",
+				"name": "commission_rate",
 				"type": "String"
 			},
 			{
-				"name": "account_status",
+				"name": "freelancer_payout",
 				"type": "String"
 			},
 			{
-				"name": "verification_level",
+				"name": "payment_date",
 				"type": "String"
 			},
 			{
-				"name": "subscription_tier",
+				"name": "payment_method",
 				"type": "String"
 			},
 			{
-				"name": "country",
+				"name": "status",
 				"type": "String"
 			},
 			{
-				"name": "timezone",
+				"name": "currency",
 				"type": "String"
 			},
 			{
-				"name": "profile_image_url",
+				"name": "invoice_id",
+				"type": "String"
+			},
+			{
+				"name": "milestone_number",
+				"type": "String"
+			},
+			{
+				"name": "milestone_description",
+				"type": "String"
+			},
+			{
+				"name": "processing_fee",
+				"type": "String"
+			},
+			{
+				"name": "net_revenue",
 				"type": "String"
 			}
 		]

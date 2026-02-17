@@ -1,5 +1,5 @@
 {
-	"name": "Users",
+	"name": "Reviews",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "LS_MarketplaceDataLake",
@@ -10,8 +10,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "users.csv",
-				"folderPath": "users",
+				"fileName": "reviews.csv",
+				"folderPath": "reviews",
 				"container": "bronze"
 			},
 			"columnDelimiter": ",",
@@ -21,59 +21,79 @@
 		},
 		"schema": [
 			{
-				"name": "user_id",
+				"name": "review_id",
 				"type": "String"
 			},
 			{
-				"name": "email",
+				"name": "transaction_id",
 				"type": "String"
 			},
 			{
-				"name": "username",
+				"name": "project_id",
 				"type": "String"
 			},
 			{
-				"name": "first_name",
+				"name": "reviewer_id",
 				"type": "String"
 			},
 			{
-				"name": "last_name",
+				"name": "reviewee_id",
 				"type": "String"
 			},
 			{
-				"name": "user_type",
+				"name": "reviewer_type",
 				"type": "String"
 			},
 			{
-				"name": "registration_date",
+				"name": "rating",
 				"type": "String"
 			},
 			{
-				"name": "last_active_date",
+				"name": "review_text",
 				"type": "String"
 			},
 			{
-				"name": "account_status",
+				"name": "review_date",
 				"type": "String"
 			},
 			{
-				"name": "verification_level",
+				"name": "would_recommend",
 				"type": "String"
 			},
 			{
-				"name": "subscription_tier",
+				"name": "communication_rating",
 				"type": "String"
 			},
 			{
-				"name": "country",
+				"name": "quality_rating",
 				"type": "String"
 			},
 			{
-				"name": "timezone",
+				"name": "professionalism_rating",
 				"type": "String"
 			},
 			{
-				"name": "profile_image_url",
+				"name": "would_hire_again",
+				"type": "String"
+			},
+			{
+				"name": "response_text",
+				"type": "String"
+			},
+			{
+				"name": "response_date",
+				"type": "String"
+			},
+			{
+				"name": "helpful_count",
+				"type": "String"
+			},
+			{
+				"name": "reported",
+				"type": "String"
+			},
+			{
+				"name": "verified_purchase",
 				"type": "String"
 			}
 		]

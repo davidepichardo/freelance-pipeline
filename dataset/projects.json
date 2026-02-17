@@ -2,7 +2,7 @@
 	"name": "projects",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "Projects",
+			"referenceName": "LS_MarketplaceDataLake",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
