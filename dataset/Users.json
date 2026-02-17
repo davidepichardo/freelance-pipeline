@@ -1,0 +1,81 @@
+{
+	"name": "Users",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "users",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "users.csv",
+				"folderPath": "users",
+				"container": "bronze"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "user_id",
+				"type": "String"
+			},
+			{
+				"name": "email",
+				"type": "String"
+			},
+			{
+				"name": "username",
+				"type": "String"
+			},
+			{
+				"name": "first_name",
+				"type": "String"
+			},
+			{
+				"name": "last_name",
+				"type": "String"
+			},
+			{
+				"name": "user_type",
+				"type": "String"
+			},
+			{
+				"name": "registration_date",
+				"type": "String"
+			},
+			{
+				"name": "last_active_date",
+				"type": "String"
+			},
+			{
+				"name": "account_status",
+				"type": "String"
+			},
+			{
+				"name": "verification_level",
+				"type": "String"
+			},
+			{
+				"name": "subscription_tier",
+				"type": "String"
+			},
+			{
+				"name": "country",
+				"type": "String"
+			},
+			{
+				"name": "timezone",
+				"type": "String"
+			},
+			{
+				"name": "profile_image_url",
+				"type": "String"
+			}
+		]
+	}
+}
